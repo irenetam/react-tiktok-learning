@@ -6,27 +6,28 @@ import Following from '~/pages/Following';
 import Upload from '~/pages/Upload';
 import Search from '~/pages/Search';
 import Profile from '~/pages/Profile';
+import routes from '~/config/routes';
 
 const publicRoutes = [
     {
-        path: '/',
+        path: routes.home,
         component: Home,
     },
     {
-        path: '/following',
+        path: routes.following,
         component: Following,
     },
     {
-        path: '/@:nickname',
+        path: routes.profile,
         component: Profile,
     },
     {
-        path: '/upload',
+        path: routes.upload,
         component: Upload,
         layout: HeaderOnly,
     },
     {
-        path: '/search',
+        path: routes.search,
         component: Search,
         layout: null,
     },
