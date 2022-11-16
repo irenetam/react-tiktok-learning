@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
-import Tippy from '@tippyjs/react';
+import Tippy from '@tippyjs/react/headless';
 
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import AccountPreview from './AccountPreview';
